@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+body {
+    background-color: #e6ecf0;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Fasthand', cursive;
+    font-family: 'Lora', serif;
+}
+
+header {
+    font-size: 20px;
+}
+
+
+/* .encyclopedia {
+    position: relative;
+} */
+
+.box {
+    background-color: #fff;
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: 0 0.12rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    margin: 20px -15px;
+}
+
+
+/* .col {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+} */
+
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
+.encyclopedia .events {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #fafafa;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.encyclopedia .events .event {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 0.75rem;
+    padding-right: 0.75rem;
+    flex: 0 0 50%;
+    min-height: 70px;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    font-family: 'Gloock', serif;
+    /* padding: 10px; */
+    /* margin: 35px; */
+    transition: color .5s ease-in-out;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #187976;
+}
+
+.imgSize {
+    width: 30%;
+    height: 30%;
+}
+
+main {
+    margin-top: 100px;
+}
+
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+    /* margin: 10px; */
+    transition: all .3s ease-in-out;
+    padding: 10px;
+}
+
+li:hover {
+    margin-left: 5px;
+}
+
+.p {
+    font-size: 2em;
+    width: 40%;
+    height: 40%;
+    padding: 1em;
+    text-align: center;
+}
+
+.div2 {
+    height: 100%;
+}
+
+.divOfp {
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-content: end;
+    width: 40%;
+    padding: 10px;
+    text-align: justify;
+    margin: 10px;
+}
+
+
+/* .divOfp p {
+    overflow-y: scroll;
+    height: 300px;
+    width: 450px;
+} */
+
+.addToBag {
+    margin-top: 50px;
+    /* align-content: end; */
+}
+
+
+/* .addToBag:focus {
+    background-color: red;
+    align-content: end;
+} */
+
+.price,
+.count {
+    font-weight: bold;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width:1000px) {
+    .p {
+        font-size: 1.5em;
+        width: 40%;
+        height: 40%;
+        padding: 0.5em;
+        text-align: center;
+    }
+    .divOfp p {
+        overflow-y: scroll;
+        width: 300px;
+        height: 200px;
+    }
+    /* body {
+        background-color: red;
+    } */
+}
+
+@media screen and (max-width:800px) {
+    .p {
+        font-size: 1em;
+        width: 40%;
+        height: 40%;
+        padding: 0.5em;
+        text-align: center;
+    }
+    /* body {
+        background-color: green;
+    } */
+    .divOfp p,
+    .divOfp a,
+    .divOfp section {
+        font-size: 0.75em;
+    }
+    .divOfp p {
+        overflow-y: scroll;
+        width: 180px;
+        height: 150px;
+    }
+    .addToBag {
+        margin-top: 30px;
+        /* align-content: end; */
+    }
+}
