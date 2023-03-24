@@ -20,6 +20,6 @@
 })()
 let username = document.getElementById("validationCustomUsername")
 
-function myFunction() {
-    alert(`Hello ${username.value} !`);
-}
+// function myFunction() {
+//     alert(`Hello ${username.value} !`);
+// }
