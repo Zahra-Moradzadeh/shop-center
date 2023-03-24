@@ -177,3 +177,17 @@ li:hover {
         height: 200px;
     }
 }
+
+
+/* @media screen and (max-width:400px) {
+    p {
+        display: none;
+    }
+    h2 {
+        font-size: 0.8em;
+    }
+    .imgSize {
+        width: 50%;
+        height: 50%;
+    }
+} */
