@@ -8,13 +8,15 @@ async function main() {
         const div2 = document.createElement("div")
         div2.setAttribute("class", "d-flex events p-5 justify-content-around align-baseline div2")
         div.appendChild(div2)
+            //////////////////////////////////////
+        const images = document.createElement("img");
+        images.src = res.data[i]["image"];
+        images.setAttribute("class", "imgSize");
+        div2.appendChild(images);
         const div3 = document.createElement("div")
         div3.setAttribute("class", "divOfp")
         div2.appendChild(div3)
-        const p = document.createElement("p");
-        p.innerText = res.data[i]["description"]
-            // p.setAttribute("class", "p1");
-        div3.appendChild(p);
+
         const price = document.createElement("section");
         price.innerText = `Price : ${res.data[i]["price"]}$`
         price.setAttribute("class", "price")
@@ -29,18 +31,18 @@ async function main() {
         const add = document.createElement("button");
         add.setAttribute("class", "addToBag")
         div3.appendChild(add);
-
         const addA = document.createElement("a");
         addA.href = "./login.html"
         addA.innerText = `ADD TO BAG`
-            // addA.setAttribute("class", "addToBag")
-            // addA.addEventListener("click", function() {})
         add.appendChild(addA);
+        //////////////////////////////////////
+        const divp = document.createElement("div")
+        divp.setAttribute("class", "divppp")
+        div.appendChild(divp)
+        const p = document.createElement("p");
+        p.innerText = res.data[i]["description"]
+        divp.appendChild(p);
 
-        const images = document.createElement("img");
-        images.src = res.data[i]["image"];
-        images.setAttribute("class", "imgSize");
-        div2.appendChild(images);
 
 
     }

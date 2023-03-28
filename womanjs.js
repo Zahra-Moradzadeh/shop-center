@@ -31,7 +31,6 @@ async function main() {
         const add = document.createElement("button");
         add.setAttribute("class", "addToBag")
         div3.appendChild(add);
-
         const addA = document.createElement("a");
         addA.href = "./login.html"
         addA.innerText = `ADD TO BAG`
