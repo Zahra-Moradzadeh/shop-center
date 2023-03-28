@@ -1,11 +1,3 @@
-// import data from './products.json'
-// assert { type: 'JSON' };
-
-// const data = require("./products.json")
-
-// console.log("hello")
-// console.log(data)
-
 async function main() {
     const res = await axios.get(`https://fakestoreapi.com/products`);
     console.log(res.data); {
@@ -41,5 +33,6 @@ async function main() {
         p.setAttribute("class", "p");
         menCloths.appendChild(p);
     }
+
 }
 main();

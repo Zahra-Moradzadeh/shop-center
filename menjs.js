@@ -19,11 +19,14 @@ async function main() {
         price.innerText = `Price : ${res.data[i]["price"]}$`
         price.setAttribute("class", "price")
         div3.appendChild(price);
+
         const Conunt = document.createElement("section");
         Conunt.innerText = `Count : ${res.data[i]["rating"]["count"]}`
         Conunt.setAttribute("class", "count")
-
         div3.appendChild(Conunt);
+        const star = document.createElement("div")
+        star.innerHTML = '<div class="d-flex justify-content-between"> <section class = "star"><i class = "fa-solid yellow fa-star" ></i><i class = "fa-solid yellow fa-star" ></i><i class = "fa-solid yellow fa-star" ></i><i class = "fa-solid yellow fa-star" ></i><i class = "fa-solid yellow fa-star" ></i></section> </div > ';
+        div3.append(star)
         const add = document.createElement("button");
         add.setAttribute("class", "addToBag")
         div3.appendChild(add);
