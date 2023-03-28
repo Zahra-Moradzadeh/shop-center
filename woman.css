@@ -13,6 +13,10 @@ body {
     background-color: rgb(248, 249, 250);
 }
 
+.navbar-brand {
+    color: #187976;
+}
+
 .carousel {
     margin-top: 100px;
 }
@@ -171,6 +175,14 @@ footer p {
     margin: 10px;
     text-align: center;
     font-size: 30px;
+}
+
+.addToBag {
+    margin-top: 50px;
+    border-radius: 5px;
+    box-shadow: -2px 2px 6px #7a7a7c79 !important;
+    font-weight: bold;
+    border: 1px solid #7a7a7c79;
 }
 
 
